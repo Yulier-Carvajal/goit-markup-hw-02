@@ -1,0 +1,170 @@
+.body {
+  font-family: 'Roboto', sans-serif;
+}
+ul {
+  list-style: none;
+}
+.titulo {
+  text-decoration: none;
+}
+h1 {
+  color: blue;
+  font-family: 'roboto';
+}
+span {
+  color: black;
+  font-family: 'roboto';
+}
+
+.menu a {
+  color: rgb(13, 13, 14);
+  text-decoration: none;
+}
+.menu a:hover {
+  color: rgb(9, 9, 247);
+}
+.contactos {
+  color: rgb(15, 15, 15);
+}
+.contactos:hover {
+  color: rgb(9, 9, 247);
+}
+
+.introduccion > h1 {
+  color: rgb(241, 241, 245);
+  background-color: rgb(7, 7, 7);
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 25px;
+  line-height: 60px;
+  text-align: center;
+}
+.mi-boton {
+  color: rgba(255, 255, 255, 1);
+  background-color: blue;
+  width: 197;
+  height: 30;
+  text-align: center;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+}
+.servicios-prestados {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+}
+h2 {
+  font-family: 'roboto';
+  text-align: center;
+  font-weight: 300;
+  font-size: 36px;
+  line-height: 42px;
+}
+.img-container-work {
+  height: 323;
+  top: 1093;
+  left: 215;
+}
+.nav_contacto {
+  background-color: black;
+  color: rgb(250, 249, 249);
+}
+.nav_contacto:hover {
+  color: blue;
+}
+.botones {
+  width: 100%;
+  text-align: center;
+  padding: 1%;
+  display: inline-block;
+  font-family: 'roboto';
+}
+.boton1 {
+  color: #070707 !important;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 0.5em 1.2em;
+  background: rgba(0, 0, 0, 0);
+  border: 2px solid;
+  border-color: #318aac;
+  transition: all 1s ease;
+  position: relative;
+}
+.boton1:hover {
+  background: #318aac;
+  color: #fff !important;
+}
+.boton2 {
+  color: #070707 !important;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 0.5em 1.2em;
+  background: rgba(0, 0, 0, 0);
+  border: 2px solid;
+  border-color: #318aac;
+  transition: all 1s ease;
+  position: relative;
+}
+.boton2:hover {
+  background: #318aac;
+  color: #fff !important;
+}
+.boton3 {
+  color: #070707 !important;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 0.5em 1.2em;
+  background: rgba(0, 0, 0, 0);
+  border: 2px solid;
+  border-color: #318aac;
+  transition: all 1s ease;
+  position: relative;
+}
+.boton3:hover {
+  background: #318aac;
+  color: #fff !important;
+}
+.boton4 {
+  color: #070707 !important;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 0.5em 1.2em;
+  background: rgba(0, 0, 0, 0);
+  border: 2px solid;
+  border-color: #318aac;
+  transition: all 1s ease;
+  position: relative;
+}
+.boton4:hover {
+  background: #318aac;
+  color: #fff !important;
+}
+.boton5 {
+  color: #070707 !important;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 0.5em 1.2em;
+  background: rgba(0, 0, 0, 0);
+  border: 2px solid;
+  border-color: #318aac;
+  transition: all 1s ease;
+  position: relative;
+}
+.boton5:hover {
+  background: #318aac;
+  color: #fff !important;
+}
+.servicios {
+  width: 370;
+  height: 294;
+  top: 274;
+  left: 215;
+}
