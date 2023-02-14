@@ -1,166 +1,323 @@
-.body {
+body {
   font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  list-style: 1;
+  color: #212121;
 }
 ul {
   list-style: none;
 }
+
+a {
+  text-decoration: none;
+  color: currentColor;
+}
 .titulo {
   text-decoration: none;
-}
-h1 {
-  color: blue;
-  font-family: 'roboto';
-}
-span {
-  color: black;
-  font-family: 'roboto';
+  color: rgba(33, 150, 243, 1);
+  font-family: 'raleway', sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.15;
+  text-align: right;
+  letter-spacing: 0.03em;
 }
 
 .menu a {
-  color: rgb(13, 13, 14);
   text-decoration: none;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 0.87;
 }
 .menu a:hover {
-  color: rgb(9, 9, 247);
+  color: rgba(33, 150, 243, 1);
 }
-.contactos {
-  color: rgb(15, 15, 15);
+.principal {
+  color: rgba(33, 150, 243, 1);
+  text-decoration: none;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 0.87;
+  letter-spacing: 0.02em;
 }
-.contactos:hover {
-  color: rgb(9, 9, 247);
+.portafolio {
+  color: rgba(33, 33, 33, 1);
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 0.87;
+  letter-spacing: 0.02em;
+}
+
+.contactanos {
+  color: #070707;
+  text-decoration: none;
+}
+.contactanos:hover {
+  color: rgba(33, 150, 243, 1);
+}
+.contactos a {
+  text-decoration: none;
+}
+.contactos a:hover {
+  color: rgba(33, 150, 243, 1);
+}
+.correo {
+  color: rgba(117, 117, 117, 1);
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 0, 87;
+  letter-spacing: 0.02em;
+}
+.correo:hover {
+  color: #2196f3;
+}
+.telefono {
+  color: rgba(117, 117, 117, 1);
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 0.87;
+  letter-spacing: 0.02em;
 }
 
 .introduccion > h1 {
   color: rgb(241, 241, 245);
-  background-color: rgb(7, 7, 7);
+  background-color: #2f303a;
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 900;
-  font-size: 25px;
-  line-height: 60px;
+  font-size: 44px;
+  line-height: 1.36;
   text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
 }
 .mi-boton {
   color: rgba(255, 255, 255, 1);
-  background-color: blue;
+  background-color: #2196f3;
   width: 197;
   height: 30;
   text-align: center;
   font-family: 'Roboto';
   font-style: normal;
-  font-weight: 400;
+  font-weight: 700;
   font-size: 16px;
-  line-height: 30px;
+  line-height: 2;
   display: flex;
+  align-items: center;
+  text-align: center;
   margin-left: auto;
   margin-right: auto;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
 }
 .servicios-prestados {
+  color: rgba(117, 117, 117, 1);
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.87;
+  line-height: 24px;
+}
+h3 {
+  color: #212121;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 0.87;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+h2 {
+  color: #212121;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+.img-container-work {
+  height: 323.7;
+  left: 215;
+  top: 1092.3;
+  background: url(.jpg);
+  mix-blend-mode: normal;
+}
+.computador {
+  width: 373.16px;
+  height: 323.7px;
+  left: 215px;
+  top: 1092.3px;
+  background: url();
+  mix-blend-mode: normal;
+}
+.celular {
+  width: 373.16px;
+  height: 323.7px;
+  left: 618.42px;
+  top: 1092.3px;
+  background: url();
+}
+.tablet {
+  width: 373.16px;
+  height: 323.7px;
+  left: 1015px;
+  top: 1092px;
+  background: url();
+}
+.img-container-team {
+  height: 260;
+  left: 515;
+  top: 1696;
+  background: url(.jpg);
+  border-radius: 0px;
+  mix-blend-mode: normal;
+}
+
+p {
+  color: #757575;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 0.84;
+  letter-spacing: 0.03em;
+}
+.ubicacion {
+  color: #ffffff;
+}
+
+.profesion {
+  color: #212121;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 0.84;
+
+  letter-spacing: 0.03em;
+}
+.nav_contacto {
+  background-color: #2f303a;
+  color: #ffffff;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 2.5;
+  letter-spacing: 0.03em;
+}
+.contact-correo {
+  color: rgba(255, 255, 255, 0.6);
+  font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
+  letter-spacing: 0.03em;
 }
-h2 {
-  font-family: 'roboto';
-  text-align: center;
-  font-weight: 300;
-  font-size: 36px;
-  line-height: 42px;
+.contact-correo:hover {
+  color: #2196f3;
 }
-.img-container-work {
-  height: 323;
-  top: 1093;
-  left: 215;
+.contact-telefono {
+  color: rgba(255, 255, 255, 0.6);
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
 }
-.nav_contacto {
-  background-color: black;
-  color: rgb(250, 249, 249);
+.contact-telefono:hover {
+  color: #2196f3;
 }
-.nav_contacto:hover {
-  color: blue;
-}
+/*Estilos portafolio*/
 .botones {
-  width: 100%;
-  text-align: center;
-  padding: 1%;
-  display: inline-block;
-  font-family: 'roboto';
+  display: flex;
 }
 .boton1 {
-  color: #070707 !important;
-  font-size: 20px;
+  font-family: 'Roboto';
+  font-style: normal;
   font-weight: 500;
-  padding: 0.5em 1.2em;
-  background: rgba(0, 0, 0, 0);
-  border: 2px solid;
-  border-color: #318aac;
-  transition: all 1s ease;
-  position: relative;
+  font-size: 16px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+  margin-right: 15px;
 }
 .boton1:hover {
-  background: #318aac;
-  color: #fff !important;
+  background: rgba(33, 150, 243, 1);
 }
 .boton2 {
-  color: #070707 !important;
-  font-size: 20px;
+  font-family: 'Roboto';
+  font-style: normal;
   font-weight: 500;
-  padding: 0.5em 1.2em;
-  background: rgba(0, 0, 0, 0);
-  border: 2px solid;
-  border-color: #318aac;
-  transition: all 1s ease;
-  position: relative;
+  font-size: 16px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+  margin-right: 15px;
 }
 .boton2:hover {
-  background: #318aac;
-  color: #fff !important;
+  background: rgba(33, 150, 243, 1);
 }
 .boton3 {
-  color: #070707 !important;
-  font-size: 20px;
+  font-family: 'Roboto';
+  font-style: normal;
   font-weight: 500;
-  padding: 0.5em 1.2em;
-  background: rgba(0, 0, 0, 0);
-  border: 2px solid;
-  border-color: #318aac;
-  transition: all 1s ease;
-  position: relative;
+  font-size: 16px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+  margin-right: 15px;
 }
 .boton3:hover {
-  background: #318aac;
-  color: #fff !important;
+  background: rgba(33, 150, 243, 1);
 }
 .boton4 {
-  color: #070707 !important;
-  font-size: 20px;
+  font-family: 'Roboto';
+  font-style: normal;
   font-weight: 500;
-  padding: 0.5em 1.2em;
-  background: rgba(0, 0, 0, 0);
-  border: 2px solid;
-  border-color: #318aac;
-  transition: all 1s ease;
-  position: relative;
+  font-size: 16px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+  margin-right: 15px;
 }
 .boton4:hover {
-  background: #318aac;
-  color: #fff !important;
+  background: rgba(33, 150, 243, 1);
 }
 .boton5 {
-  color: #070707 !important;
-  font-size: 20px;
+  font-family: 'Roboto';
+  font-style: normal;
   font-weight: 500;
-  padding: 0.5em 1.2em;
-  background: rgba(0, 0, 0, 0);
-  border: 2px solid;
-  border-color: #318aac;
-  transition: all 1s ease;
-  position: relative;
+  font-size: 16px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+  margin-right: 15px;
 }
 .boton5:hover {
-  background: #318aac;
-  color: #fff !important;
+  background: rgba(33, 150, 243, 1);
 }
 .servicios {
   width: 370;

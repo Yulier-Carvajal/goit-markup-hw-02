@@ -6,16 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="./CSS/styles.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,500;0,700;0,900;1,400&family=Roboto:wght@900&display=swap" rel="stylesheet">
   </head>
   <body>
     <header>
       <a href="#" class="titulo">
-        <h1><span>Web</span>Studio</h1>
+        WebStudio
       <nav>
         <ul class="menu">
           <li><a href="#"> Estudio </a></li>
@@ -23,22 +21,29 @@
           <li><a href="#">Contactos </a></li>
         </ul>
         <ul class="contactos">
-          <li><a ref="mailto:info@webstudio.com">info@webstudio.com</a></li>
-          <li><a ref="tel:+525555296000">+52 55 5529 6000</a></li>
+          <li>
+            <a href="mailto:info@webstudio.com" class="correo"
+              >info@webstudio.com</a
+            >
+          </li>
+          <li>
+            <a href="tel:+525555296000" class="telefono">+52 55 5529 6000</a>
+          </li>
         </ul>
       </nav>
     </header>
     <main>
       <section>
-        <div class="botones"></div>
-        <button type="button" class="boton1">Todo</button>
-        <button type="button" class="boton2">Sitio-Web</button>
-        <button type="button" class="boton3">Aplicaciones</button>
-        <button type="button" class="boton4">Diseño</button>
-        <button type="button" class="boton5">Marketing</button>
-      </section>
-      <section class="servicios">
-        <ul class="img-container work">
+        <ul class="botones">
+          <li><button type="button" class="boton1">Todo</button></li>
+          <li><button type="button" class="boton2">Sitio-Web</button></li>
+          <li><button type="button" class="boton3">Aplicaciones</button></li>
+          <li><button type="button" class="boton4">Diseño</button></li>
+          <li><button type="button" class="boton5">Marketing</button></li>
+          
+        </ul>
+        
+              <ul class="img-container work">
           <li>
             <img
               src="images/tecnoduck.jpg"
@@ -132,17 +137,21 @@
       </section>
     </main>
     <footer>
-      <a href="#" class="titulo">
-        <h1><span>Web</span>Studio</h1>  </a>
+      
       <address>
         <ul class="nav_contacto">
           <li>
-            <a href="https://goo.gl/maps/j6cTYu9XQu7Mtogz7"
-              target="_blank" rel="noopener noreferrer">Calz. Ticomán 500, Ciudad de México, CDMX, México</a
-            >
+          <a
+            href="https://goo.gl/maps/j6cTYu9XQu7Mtogz7"
+            target="_blank"
+            rel="noopener noreferrer">
+            <li><a href="#" class="titulo"> WebStudio </a></li>
+            <li>Calz. Ticomán 500,Ciudad de</li>
+            <li>México, CDMX, México</li>
+              </li>            
           </li>
-          <li><a href="mailto:Info@webstudio.com">info@webstudio</a></li>
-          <li><a href="tel:+525555296000">+52 55 5529 6000</a></li>
+          <li><a href="mailto:Info@webstudio.com" class="contact-correo">info@webstudio</a></li>
+          <li><a href="tel:+525555296000" class="contact-telefono">+52 55 5529 6000</a></li>
         </ul>
       </address>
     </footer>
