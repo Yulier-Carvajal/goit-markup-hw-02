@@ -450,40 +450,40 @@ p {
 }
 
 .img1 {
+  float: left;
   padding: 10px;
   margin: 10px;
   border: 2px solid black;
-  float: left;
   width: 290px;
   height: 320px;
 }
 .img2 {
+  float: left;
   padding: 45px;
   margin: 10px;
-  float: left;
   border: 2px solid black;
   width: 290px;
   height: 320px;
 }
 .img3 {
+  float: left;
   padding: 10px;
   margin: 10px;
-  float: left;
   border: 2px solid black;
   width: 290px;
   height: 320px;
 }
 .img4 {
+  float: left;
   padding: 10px;
   margin: 10px;
-  float: left;
   border: 2px solid black;
   width: 290px;
   height: 320px;
 }
 .img5 {
-  padding: 10px;
   float: left;
+  padding: 10px;
   margin: 10px;
   border: 2px solid black;
   width: 290px;
@@ -498,7 +498,6 @@ p {
   height: 320px;
 }
 .img7 {
-  display: flex;
   float: left;
   padding: 10px;
   margin: 10px;
@@ -507,7 +506,6 @@ p {
   height: 320px;
 }
 .img8 {
-  display: flex;
   float: left;
   padding: 10px;
   margin: 10px;
@@ -516,7 +514,6 @@ p {
   height: 320px;
 }
 .img9 {
-  display: flex;
   float: left;
   padding: 10px;
   margin: 10px;
