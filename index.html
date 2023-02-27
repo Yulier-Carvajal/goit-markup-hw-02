@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Web Studio Project</title>
     <link rel="stylesheet" href="./CSS/styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -13,35 +14,32 @@
       rel="stylesheet"
     />
   </head>
-  <body>
+  <body class="contenedor">
     <header>
-      <a href="#" class="titulo">WebStudio</a>
       <nav>
+      <div class="encabezado" >
+        <a href="#" class="titulo">WebStudio</a>
         <ul class="menu">
-          <li><a href="#" class="principal"> Estudio </a></li>
-          <li><a href="portafolio.html " class="portafolio">Portafolio </a></li>
-          <li><a href="#" class="contactos">Contactos </a></li>
-        </ul>
-        <ul class="contactos">
-          <li>
-            <a href="mailto:info@webstudio.com" class="correo"
-              >info@webstudio.com</a
-            >
-          </li>
-          <li>
-            <a href="tel:+525555296000" class="telefono">+52 55 5529 6000</a>
-          </li>
-        </ul>
-      </nav>
+            <li><a href="#" class="principal"> Estudio </a></li>
+            <li><a href="portafolio.html " class="portafolio">Portafolio </a></li>
+            <li><a href="#" class="contactos">Contactos </a></li>
+          <li><a href="mailto:info@webstudio.com" class="correo">info@webstudio.com</a></li>
+            <li><a href="tel:+525555296000" class="telefono">+52 55 5529 6000</a></li>
+          </ul>
+      </div>
+    </nav>
     </header>
     <main>
-      <section class="introduccion">
+      <section class="seccion-principal">
+           <div class="introduccion">
         <h1>SOLUCIONES EFICACES PARA SU NEGOCIO</h1>
         <button type="button" class="mi-boton">
           Solicite nuestro servicio
         </button>
+            </div>
       </section>
-      <section>
+          <section>
+        <div class="container">
         <ul class="servicios-prestados">
           <li>
             <h3>ATENCIÓN A LOS DETALLES</h3>
@@ -73,57 +71,55 @@
             </p>
           </li>
         </ul>
+      </div>
       </section>
-      <section>
+      <section class="equipo">
+        <div class="container-work">
         <h2>A qué nos dedicamos</h2>
         <ul class="img-container-work">
           <li class="computador">
-            <img
-              src="images/imagen1.jpg"
-              width="370"
-              alt="Trabajando en computador"
-            />
+            <img src="images/imagen1.jpg"alt="Trabajando en computador" />
           </li>
           <li class="celular">
-            <img
-              src="images/imagen2.jpg"
-              width="370"
-              alt="Configuracion celular"
-            />
+            <img src="images/imagen2.jpg" alt="Configuracion celular" />
           </li>
           <li class="tablet">
-            <img src="images/imagen3.jpg" width="370" alt="Tablet" />
-          </li>
+            <img src="images/imagen3.jpg" alt="Tablet" /></li>
         </ul>
       </section>
       <section>
-        <h2>Nuestro Equipo</h2>
-        <ul class="img-container-team">
-          <li>
-            <img src="images/team1.jpg" width="250" alt="Andres Cubo" />
+        <div class="container-team">
+         <ul class="img-container-team">
+          <h2 class="nuestro-equipo">Nuestro Equipo</h2>
+          <div class="team1">
+          <li><img src="images/team1.jpg" width="250" alt="Andres Cubo" />
             <h3 class="profesion">Andres Cubo</h3>
-            <p>Diseñador de Productos</p>
-          </li>
-          <li>
-            <img src="images/team2.jpg" width="250" alt="Carla Palacios" />
+            <p class="profesion-team">Diseñador de Productos</p>
+          </li></div>
+
+          <div class="team2">
+          <li> <img src="images/team2.jpg" width="250" alt="Carla Palacios" />
             <h3 class="profesion">Carla Palacios</h3>
-            <p>Diseñadora Frontend</p>
-          </li>
-          <li>
-            <img src="images/team3.jpg" width="250" alt="Mario Dorado" />
-            <h3 class="profesion">Mario Dorado</h3>
-            <p>Marketing</p>
-          </li>
-          <li>
-            <img src="images/team4.jpg" width="250" alt="Pablo Mijangos" />
-            <h3 class="profesion">Pablo Mijangos</h3>
-            <p>Diseñador IU</p>
-          </li>
+            <p class="profesion-team">Diseñadora Frontend</p>
+          </li></div>
+
+          <div class="team3">
+          <li><img src="images/team3.jpg"  width="250" alt="Mario Dorado" />
+            <h3 class="profesion">Mario Dorado</h3> <p class="profesion-team">Marketing</p>
+          </li></div>
+
+          <div class="team4">
+          <li><img src="images/team4.jpg" width="250" alt="Pablo Mijangos" />
+            <h3 class="profesion">Pablo Mijangos</h3><p class="profesion-team">Diseñador IU</p>
+          </li></div>
         </ul>
+      </div>
       </section>
+    
     </main>
     <footer>
       <address>
+        <div class="container">
         <ul class="nav_contacto">
           <li>
             <a
@@ -147,6 +143,7 @@
             >
           </li>
         </ul>
+      </div>
       </address>
     </footer>
   </body>
