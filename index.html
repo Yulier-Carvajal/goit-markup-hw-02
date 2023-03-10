@@ -6,41 +6,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Web Studio Project</title>
     <link rel="stylesheet" href="./CSS/styles.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,500;0,700;0,900;1,400&family=Roboto:wght@900&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
   </head>
-  <body class="contenedor">
-    <header>
-      <nav>
-      <div class="encabezado" >
+  <body class="container">
+    <header class="header">
+      <div class="container encabezado" >
+      <nav class="nav-container">
         <a href="#" class="titulo">WebStudio</a>
-        <ul class="menu">
-            <li><a href="#" class="principal"> Estudio </a></li>
-            <li><a href="portafolio.html " class="portafolio">Portafolio </a></li>
-            <li><a href="#" class="contactos">Contactos </a></li>
-          <li><a href="mailto:info@webstudio.com" class="correo">info@webstudio.com</a></li>
-            <li><a href="tel:+525555296000" class="telefono">+52 55 5529 6000</a></li>
+        <ul class="nav-list ">
+            <li class="nav-item active"><a href="./index.html"> Estudio </a></li>
+            <li class="nav-item "><a href="portafolio.html ">Portafolio </a></li>
+            <li class="nav-item "><a href="#" >Contactos </a></li>
+        </ul>
+      </nav>
+      <ul class="contact-list">
+          <li class="contacto-item"><a href="mailto:info@webstudio.com">info@webstudio.com</a></li>
+            <li class="contacto-item"><a href="tel:+525555296000">+52 55 5529 6000</a></li>
           </ul>
       </div>
-    </nav>
     </header>
     <main>
       <section class="seccion-principal">
-           <div class="introduccion">
-        <h1>SOLUCIONES EFICACES PARA SU NEGOCIO</h1>
+      <h1 class="introduccion">SOLUCIONES EFICACES PARA SU NEGOCIO</h1>
         <button type="button" class="mi-boton">
           Solicite nuestro servicio
         </button>
-            </div>
       </section>
-          <section>
-        <div class="container-serv">
-        <ul class="servicios-prestados">
+          <section class="container section-spacing">
+           <ul class="servicios-prestados">
           <li>
             <h3>ATENCIÓN A LOS DETALLES</h3>
             <p>
@@ -71,9 +66,9 @@
             </p>
           </li>
         </ul>
-      </div>
+     
       </section>
-      <section class="equipo">
+      <section class="container">
         <div class="container-work">
         <h2>A qué nos dedicamos</h2>
         <ul class="img-container-work">
@@ -87,7 +82,7 @@
             <img src="images/imagen3.jpg" alt="Tablet" /></li>
         </ul>
       </section>
-      <section>
+      <section class="container">
         <div class="container-team">
          <ul class="img-container-team">
           <h2 class="nuestro-equipo">Nuestro Equipo</h2>

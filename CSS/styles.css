@@ -1,19 +1,11 @@
 body {
+  font-family: 'Raleway', sans-serif;
   font-family: 'Roboto', sans-serif;
   font-size: 14px;
   font-weight: 400;
   list-style: 1;
   color: #212121;
-}
-
-.contenedor {
-  width: 1200px;
   background-color: #ffffff;
-  margin: auto;
-  padding: 20px;
-  position: relative;
-  padding-bottom: 3em;
-  min-height: 100vh;
 }
 
 h1,
@@ -24,6 +16,7 @@ h5,
 h6,
 p {
   margin: 0;
+  padding: 0%;
 }
 html {
   box-sizing: border-box;
@@ -52,17 +45,60 @@ address {
 }
 ul {
   list-style: none;
+  margin: 0;
+  padding: 0%;
 }
 
 a {
   text-decoration: none;
   color: currentColor;
 }
-.encabezado {
+.container {
   width: 1200px;
+  margin: 0 auto;
+}
+
+.nav-item {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  color: #212121;
+}
+.contact-list {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+.header {
+  height: 90px;
+  border-bottom: 1px solid #ececec;
+  display: flex;
+}
+.encabezado {
   text-decoration: none;
   display: flex;
-  padding: 10px;
+  justify-content: space-between;
+}
+.nav-container {
+  display: flex;
+  align-items: center;
+  gap: 90px;
+}
+.nav-list {
+  display: flex;
+  gap: 50px;
+}
+.contacto-item {
+  color: rgba(117, 117, 117, 1);
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+}
+.contacto-item:hover {
+  color: rgba(33, 150, 243, 1);
 }
 .titulo {
   color: rgba(33, 150, 243, 1);
@@ -73,96 +109,26 @@ a {
   text-align: right;
   letter-spacing: 0.03em;
 }
-.menu a:hover {
+.active {
   color: rgba(33, 150, 243, 1);
-}
-.principal {
-  color: rgba(33, 150, 243, 1);
-
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  position: absolute;
-  width: 49px;
-  height: 16px;
-  left: 345px;
-  top: 32px;
-}
-.portafolio {
-  color: rgba(33, 33, 33, 1);
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  position: absolute;
-  width: 65px;
-  height: 16px;
-  left: 445px;
-  top: 32px;
 }
 
-.contactos {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  position: absolute;
-  width: 59px;
-  height: 16px;
-  left: 565px;
-  top: 32px;
-}
-.contactos a:hover {
-  color: rgba(33, 150, 243, 1);
-}
-.correo {
-  color: rgba(117, 117, 117, 1);
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  position: absolute;
-  width: 135px;
-  height: 16px;
-  left: 850px;
-  top: 32px;
-}
-.correo:hover {
-  color: #2196f3;
-}
-.telefono {
-  color: rgba(117, 117, 117, 1);
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  position: absolute;
-  width: 118px;
-  height: 16px;
-  left: 1100px;
-  top: 32px;
-}
 .seccion-principal {
-  width: 1200px;
-  height: 400px;
-  top: 80px;
-  left: -4px;
+  height: 600px;
   background-color: #2f303a;
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .introduccion {
   width: 696px;
-  height: 120px;
   color: rgb(241, 241, 245);
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 900;
-  font-size: 20px;
-  padding: 35px;
-  margin-top: 80px;
-  margin-left: 250px;
+  font-size: 44px;
   text-align: center;
 }
 .mi-boton {
@@ -175,25 +141,25 @@ a {
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
-  border-bottom-left-radius: 0%;
-  justify-content: center;
-  align-items: center;
-  padding: 10px 32px;
   border-radius: 4px;
   border: 1px #2196f3;
 }
+
+.section-spacing {
+  margin-bottom: 95px;
+  margin-top: 95px;
+}
+
 .servicios-prestados {
+  display: flex;
   color: rgba(117, 117, 117, 1);
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;
-  display: flex;
-  margin-right: 50px;
+  justify-content: space-between;
+  margin: 100px;
 }
-.servicios-ofertados {
-  display: flex;
-  padding: 20px;
-}
+
 h3 {
   color: #212121;
   font-family: 'Roboto';
@@ -220,26 +186,30 @@ h2 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-right: 20px;
+  margin: 100px;
+  margin-bottom: 30px;
 }
+
 .computador {
   width: 373.16px;
   height: 323.7px;
   left: 215px;
   top: 1092.3px;
-  left: 10px;
+  margin-left: 30px;
 }
 .celular {
   width: 373.16px;
   height: 323.7px;
   left: 618.42px;
   top: 1092.3px;
+  margin-left: 30px;
 }
 .tablet {
   width: 373.16px;
   height: 323.7px;
   left: 1015px;
   top: 1092px;
+  margin-left: 30px;
 }
 
 .img-container-team {
@@ -368,15 +338,13 @@ p {
   display: inline-block;
 }
 /*Estilos portafolio*/
-.contenedor-portafolio {
-  width: 1200px;
-  height: 1000px;
-}
 
 .botones {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: 10px;
+  padding: 10px;
 }
 .boton1 {
   font-family: 'Roboto';
@@ -481,132 +449,16 @@ p {
 .boton5:hover {
   background: rgba(33, 150, 243, 1);
 }
+
 .img-container-portafolio {
-  width: 1200px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  align-items: center;
+  align-content: center;
+  flex-basis: calc((100% - 30px) / 3);
 }
-
-.img1 {
-  padding: 10px;
-  margin: 10px;
-  float: left;
+.img-servicios:hover {
   box-sizing: border-box;
-  margin-left: 75px;
-  width: 300px;
-  height: 300px;
-  left: calc(50% - 370px / 2 + 400px);
-  top: calc(50% - 404px / 2 + 404px);
-  background: #ffffff;
-  border: 1px solid #eeeeee;
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
-}
-.img2 {
-  padding: 10px;
-  margin: 10px;
-  float: left;
-  box-sizing: border-box;
-  width: 300px;
-  height: 300px;
-  left: calc(50% - 370px / 2);
-  top: calc(50% - 404px / 2 - 464px);
-  background: #ffffff;
-  border: 1px solid #eeeeee;
-}
-.img3 {
-  padding: 10px;
-  margin: 10px;
-  float: left;
-  box-sizing: border-box;
-  width: 300px;
-  height: 300px;
-  left: calc(50% - 370px / 2 + 400px);
-  top: calc(50% - 404px / 2 - 464px);
-  background: #ffffff;
-  border: 1px solid #eeeeee;
-}
-.img4 {
-  padding: 10px;
-  margin: 10px;
-  float: left;
-  margin-left: 75px;
-  width: 300px;
-  height: 300px;
-  left: calc(50% - 370px / 2 - 400px);
-  top: calc(50% - 404px / 2 - 30px);
-  background: #ffffff;
-  border: 1px solid #eeeeee;
-  padding: 20px;
-}
-.img5 {
-  padding: 10px;
-  margin: 10px;
-  float: left;
-  width: 300px;
-  height: 300px;
-  left: calc(50% - 370px / 2);
-  top: calc(50% - 404px / 2 - 30px);
-  background: #ffffff;
-  border: 1px solid #eeeeee;
-  padding: 20px;
-}
-.img6 {
-  padding: 10px;
-  margin: 10px;
-  float: left;
-  box-sizing: border-box;
-  width: 300px;
-  height: 300px;
-  left: calc(50% - 370px / 2 + 400px);
-  top: calc(50% - 404px / 2 - 30px);
-  background: #ffffff;
-  border: 1px solid #eeeeee;
-  padding: 20px;
-}
-.img7 {
-  padding: 10px;
-  margin: 10px;
-  float: left;
-  box-sizing: border-box;
-  margin-left: 75px;
-  width: 300px;
-  height: 300px;
-  left: calc(50% - 370px / 2 - 400px);
-  top: calc(50% - 404px / 2 + 404px);
-  background: #ffffff;
-  border: 1px solid #eeeeee;
-  padding: 20px;
-}
-.img8 {
-  padding: 10px;
-  margin: 10px;
-  float: left;
-  box-sizing: border-box;
-  width: 300px;
-  height: 300px;
-  left: calc(50% - 370px / 2);
-  top: calc(50% - 404px / 2 + 404px);
-  background: #ffffff;
-  border: 1px solid #eeeeee;
-  padding: 20px;
-}
-
-.img9 {
-  padding: 10px;
-  margin: 10px;
-  float: left;
-  box-sizing: border-box;
-  width: 300px;
-  height: 300px;
-  left: calc(50% - 370px / 2 + 400px);
-  top: calc(50% - 404px / 2 + 404px);
-  background: #ffffff;
-  border: 1px solid #eeeeee;
-  padding: 20px;
-}
-.container {
-  width: 1200px;
-  height: 252px;
-  left: 0px;
-  top: 1628px;
-  background: #2f303a;
+  border: 1px solid rgba(238, 238, 238, 1);
 }
