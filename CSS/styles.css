@@ -15,8 +15,7 @@ h4,
 h5,
 h6,
 p {
-  margin: 0;
-  padding: 0%;
+  margin: 0px;
 }
 html {
   box-sizing: border-box;
@@ -53,11 +52,37 @@ a {
   text-decoration: none;
   color: currentColor;
 }
+.header {
+  height: 90px;
+  border-bottom: 1px solid #ececec;
+  display: flex;
+}
+.encabezado {
+  text-decoration: none;
+  display: flex;
+  justify-content: space-between;
+}
 .container {
   width: 1200px;
   margin: 0 auto;
 }
-
+.nav-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 90px;
+}
+.titulo {
+  color: rgba(33, 150, 243, 1);
+  font-family: 'raleway', sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  text-align: center;
+}
+.nav-list {
+  display: flex;
+  gap: 50px;
+}
 .nav-item {
   font-family: 'Roboto';
   font-style: normal;
@@ -70,26 +95,6 @@ a {
   align-items: center;
   gap: 50px;
 }
-
-.header {
-  height: 90px;
-  border-bottom: 1px solid #ececec;
-  display: flex;
-}
-.encabezado {
-  text-decoration: none;
-  display: flex;
-  justify-content: space-between;
-}
-.nav-container {
-  display: flex;
-  align-items: center;
-  gap: 90px;
-}
-.nav-list {
-  display: flex;
-  gap: 50px;
-}
 .contacto-item {
   color: rgba(117, 117, 117, 1);
   font-family: 'Roboto';
@@ -97,18 +102,11 @@ a {
   font-weight: 500;
   font-size: 14px;
 }
+
 .contacto-item:hover {
   color: rgba(33, 150, 243, 1);
 }
-.titulo {
-  color: rgba(33, 150, 243, 1);
-  font-family: 'raleway', sans-serif;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.15;
-  text-align: right;
-  letter-spacing: 0.03em;
-}
+
 .active {
   color: rgba(33, 150, 243, 1);
 }
@@ -130,6 +128,7 @@ a {
   font-weight: 900;
   font-size: 44px;
   text-align: center;
+  padding-bottom: 40px;
 }
 .mi-boton {
   color: rgba(255, 255, 255, 1);
@@ -146,18 +145,27 @@ a {
 }
 
 .section-spacing {
-  margin-bottom: 95px;
-  margin-top: 95px;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .servicios-prestados {
+  width: 1200px;
   display: flex;
   color: rgba(117, 117, 117, 1);
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;
-  justify-content: space-between;
-  margin: 100px;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-bottom: 94px;
+}
+.team-list {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 94px;
 }
 
 h3 {
@@ -166,6 +174,8 @@ h3 {
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
+  margin-top: 20px;
+  margin-left: 24px;
 }
 
 h2 {
@@ -175,112 +185,45 @@ h2 {
   font-weight: 700;
   font-size: 36px;
   text-align: center;
-  padding: 10px;
 }
-.equipo {
-  width: 100%;
-  flex-grow: 23%;
+.nuestro-equipo {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  padding-top: 94px;
+  padding-bottom: 50px;
 }
 
 .img-container-work {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 100px;
-  margin-bottom: 30px;
+  flex-basis: calc((100% - 30px) / 3);
+  padding-top: 55.05px;
 }
-
-.computador {
+.img-work {
   width: 373.16px;
   height: 323.7px;
-  left: 215px;
-  top: 1092.3px;
-  margin-left: 30px;
 }
-.celular {
-  width: 373.16px;
-  height: 323.7px;
-  left: 618.42px;
-  top: 1092.3px;
-  margin-left: 30px;
+.img-team {
+  background: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
-.tablet {
-  width: 373.16px;
-  height: 323.7px;
-  left: 1015px;
-  top: 1092px;
-  margin-left: 30px;
-}
-
-.img-container-team {
+.team {
   background-color: rgba(245, 244, 250, 1);
-  width: 1200px;
-  height: 648px;
-  left: 0px;
-  top: 1510px;
 }
-.nuestro-equipo {
-  padding: 20px;
-  text-align: center;
-  padding: 50px;
-  align-items: center;
-}
-/*.equipo {*/
-.team1 {
-  padding: 10px;
-  margin: 10px;
-  float: left;
-  width: 270px;
-  height: 368px;
-  left: 208px;
-  top: 1696px;
-  background: #ffffff;
-  padding: 20px;
-  border-radius: 0px 0px 4px 4px;
-}
-.team2 {
-  padding: 10px;
-  margin: 10px;
-  float: left;
-  width: 270px;
-  height: 368px;
-  left: 515px;
-  top: 1696px;
-  background: #ffffff;
-  border-radius: 0px 0px 4px 4px;
-  border: none;
-}
-.team3 {
-  padding: 10px;
-  margin: 10px;
-  float: left;
-  width: 270px;
-  height: 368px;
-  left: 822px;
-  top: 1696px;
-  border-radius: 0px 0px 4px 4px;
-  background-color: #ffffff;
-  border: 10px #ffffff;
-}
-.team4 {
-  padding: 10px;
-  margin: 10px;
-  float: left;
-  width: 270px;
-  height: 368px;
-  left: 822px;
-  top: 1696px;
-  background: #ffffff;
-  border-radius: 0px 0px 4px 4px;
-}
-
 p {
   color: #757575;
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
-  padding: 5px;
+  padding: 20px;
 }
 .ubicacion {
   color: #ffffff;
@@ -299,16 +242,26 @@ p {
 .profesion-team {
   text-align: center;
 }
-.nav_contacto {
-  width: 1200px;
+footer {
   background-color: #2f303a;
+  height: 252px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.nav_contacto {
   color: #ffffff;
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
-  padding-top: 50px;
-  padding-left: 100px;
+}
+.ubicacion {
+  color: #ffffff;
+  word-spacing: 9px;
+}
+.contactos {
+  word-spacing: 9px;
+  flex-direction: column;
 }
 .contact-correo {
   color: rgba(255, 255, 255, 0.6);
@@ -337,14 +290,15 @@ p {
 .equipo {
   display: inline-block;
 }
+
 /*Estilos portafolio*/
 
 .botones {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 10px;
-  padding: 10px;
+  padding-top: 112px;
+  padding-bottom: 56px;
 }
 .boton1 {
   font-family: 'Roboto';
@@ -454,11 +408,13 @@ p {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
-  align-items: center;
-  align-content: center;
   flex-basis: calc((100% - 30px) / 3);
+  padding-bottom: 82px;
 }
+
 .img-servicios:hover {
-  box-sizing: border-box;
-  border: 1px solid rgba(238, 238, 238, 1);
+  background: #ffffff;
+  border: 1px solid #eee;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
